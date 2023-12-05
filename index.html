@@ -141,13 +141,14 @@ Liquification-resilient designs are considered when making designs for infrastru
           //Array of slide image URLs
           var slideImages =["slide.jpg","slide2.jpg","slide3.jpg","slide4.jpg","slide5.jpg"];
           var currentSlide=0;
-          function showSlide(){
-               documentE,getElemntById('slide'),src=slideImages[currentSlide];
+          function showSlide() {
+               documentE,getElementById('slide'),src=slideImages[currentSlide];
+          }
                   function nextSlide(){
                currentSlide=(currentSlide+1) % slideImages,length;
                        showSlide();
                   }
-               functio prevSlide(){
+               function prevSlide(){
                     currentSlide=(currentSlide -1+slideImages.length)%slideImages,length;
                     showSlide();
                }
