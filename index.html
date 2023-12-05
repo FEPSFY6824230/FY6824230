@@ -144,35 +144,35 @@ Liquification-resilient designs are considered when making designs for infrastru
           function showSlide( ) {
            document,getElementById('slide'),src =slideImages[currentSlide];
           }
-               function nextSlide( ) {
-               currentSlide=(currentSlide+1) % slideImages,length;
+          function nextSlide( ) {
+           currentSlide=(currentSlide+1) % slideImages,length;
                        showSlide();
-               }
-               function prevSlide( ) {
+          }
+          function prevSlide( ) {
                     currentSlide=(currentSlide -1+slideImages.length) % slideImages,length;
                     showSlide();
-               }
-               // Function to show a specific slide based on the button clicked
-               function showSlideNumber(slideNumber){
-                    currentSlide=slideNumber - 1 ;
-                    showSlide();
-               }
-               // Call showSlide() to display the first slide
-               showSlide();
-               </script>
+          }
+          // Function to show a specific slide based on the button clicked
+          function showSlideNumber(slideNumber){
+           currentSlide=slideNumber - 1 ;
+           showSlide();
+          }
+          // Call showSlide() to display the first slide
+           showSlide();
+          </script>
        
 
     <div id="slide-container">
       <img id="slide" src="Slide1.JPG" alt=" Slide 1" style="width:100%; max-width:800px;">
      
-         <!-- Previous and Next buttons container -->
+     <!-- Previous and Next buttons container -->
      <div class="button-container">
        <button class="button" onclick="prevSlide()">Previous</button>
        <button class="button" onclick="nextSlide()">Next</button>
-    </div>
+     </div>
          
-      <!-- Slide number buttons container -->
-    <div class="slide-number-container">
+     <!-- Slide number buttons container -->
+     <div class="slide-number-container">
        <button class="button" onclick="showSlideNumber(1)">1</button>
        <button class="button" onclick="showSlideNumber(2)">2</button>
        <button class="button" onclick="showslideNumber(3)>3</button>
@@ -180,11 +180,11 @@ Liquification-resilient designs are considered when making designs for infrastru
     </div>
          
     <style>
-      /* Style to center the image */
-      #slide-container {
+     /* Style to center the image */
+    #slide-container {
        text-align: center;
        position: relative;
-      }
+    }
       /* Style for the button */
       .button-container {
        position: absolute;
