@@ -142,8 +142,8 @@ Liquification-resilient designs are considered when making designs for infrastru
           var slideImages =["slide1.jpg","slide2.jpg","slide3.jpg","slide4.jpg","slide5.jpg"];
           var currentSlide=0;
           function showSlide( ) {
-               document,getElementById('slide'),src=slideImages[currentSlide];
-               }
+           document,getElementById('slide'),src =slideImages[currentSlide];
+          }
                function nextSlide( ) {
                currentSlide=(currentSlide+1) % slideImages,length;
                        showSlide();
@@ -164,20 +164,21 @@ Liquification-resilient designs are considered when making designs for infrastru
 
     <div id="slide-container">
       <img id="slide" src="slide1.jpg" alt=" Slide 1" style="width:100%; max-width:800px;">
-      <!-- Previous and Next buttons container -->
+     
+         <!-- Previous and Next buttons container -->
      <div class="button-container">
        <button class="button" onclick="prevSlide()">Previous</button>
        <button class="button" onclick="nextSlide()">Next</button>
     </div>
+         
       <!-- Slide number buttons container -->
     <div class="slide-number-container">
        <button class="button" onclick="showSlideNumber(1)">1</button>
        <button class="button" onclick="showSlideNumber(2)">2</button>
+       <button class="button" onclick="showslideNumber(3)>3</button>
+       <button class="button" onclick="showslideNumber(4)>4</button>         
     </div>
-    <script>
-      // Call showSlide() to display the first slide
-      showSlide();
-    </script>
+         
     <style>
       /* Style to center the image */
       #slide-container {
@@ -202,7 +203,7 @@ Liquification-resilient designs are considered when making designs for infrastru
         cursor: pointer;
         margin: 0 5px; /* Add some margin between the buttons */
       }
-      .slide-number-container {
+        .slide-number-container {
         position: absolute;
         bottom: 0;
         left: 50%;
