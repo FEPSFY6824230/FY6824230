@@ -137,29 +137,33 @@ Liquification-resilient designs are considered when making designs for infrastru
      </p>
     
      <h2> Conference Presentation:Earthquake induced soil liquification</h2>
-     <script>
+<script>
           //Array of slide image URLs
           var slideImages =["Slide1.JPG","Slide2.JPG","Slide3.JPG","Slide4.JPG","Slide5.JPG"];
           var currentSlide=0;
-          function showSlide( ) {
+          
+          function showSlide() {
            document,getElementById('slide'),src =slideImages[currentSlide];
           }
-          function nextSlide( ) {
+          
+          function nextSlide() {
            currentSlide=(currentSlide+1) % slideImages,length;
-                       showSlide();
+           showSlide();
           }
-          function prevSlide( ) {
-                    currentSlide=(currentSlide -1+slideImages.length) % slideImages,length;
-                    showSlide();
+          function prevSlide() {
+           currentSlide=(currentSlide -1+ slideImages.length) % slideImages,length;
+           showSlide();
           }
+          
           // Function to show a specific slide based on the button clicked
-          function showSlideNumber(slideNumber){
-           currentSlide=slideNumber - 1 ;
-           showSlide();
+           function showSlideNumber(slideNumber){
+             currentSlide=slideNumber - 1 ;
+             showSlide();
           }
+          
           // Call showSlide() to display the first slide
-           showSlide();
-          </script>
+          showSlide();
+ </script>
        
 
     <div id="slide-container">
@@ -179,20 +183,20 @@ Liquification-resilient designs are considered when making designs for infrastru
        <button class="button" onclick="showslideNumber(4)>4</button>         
     </div>
          
-    <style>
-     /* Style to center the image */
+<style>
+    /* Style to center the image */
     #slide-container {
        text-align: center;
        position: relative;
     }
-      /* Style for the button */
+    /* Style for the button */
       .button-container {
        position: absolute;
        bottom: 0;
        left: 50%;
        transform: translateX(-50%);
        margin-bottom: -100%px; /* Add some margin between the image and the buttons */
-      }
+   }
       .button {
         padding: 10px 20px;
         background-color: #4CAF50;
@@ -202,15 +206,15 @@ Liquification-resilient designs are considered when making designs for infrastru
         font-size: 16px;
         cursor: pointer;
         margin: 0 5px; /* Add some margin between the buttons */
-      }
+   }
         .slide-number-container {
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         margin-bottom: -50px; /* Add some margin between the slide number of buttons and the image */
-      }
-     </style> 
+   }
+</style> 
          
           
           
